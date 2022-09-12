@@ -24,7 +24,7 @@ jobs:
         pip install -r requirements.txt
     - name:
       run: |
-        cd yamdb_final/
+        cd api_yamdb/
         python -m flake8
         python manage.py test
 
