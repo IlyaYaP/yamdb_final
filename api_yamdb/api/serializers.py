@@ -2,8 +2,7 @@ from django.utils import timezone
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 from rest_framework.generics import get_object_or_404
-
-from reviews.models import Category, Comment, Genre, ROLES, Review, Title, User
+from reviews.models import ROLES, Category, Comment, Genre, Review, Title, User
 
 
 class ReviewSerializer(serializers.ModelSerializer):

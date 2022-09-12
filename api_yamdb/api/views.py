@@ -13,14 +13,13 @@ from reviews.models import Category, Genre, Review, Title, User
 
 from .filters import TitleFilter
 from .mixins import ListCreateDestroyViewSet
-from .permissions import (
-    IsAdmin, IsAdminModeratorOwnerOrReadOnly, IsAdminOrReadOnly
-)
-from .serializers import (
-    CategorySerializer, CommentSerializer, GenreSerializers, ReviewSerializer,
-    TitleReadSerializer, TitleSerializers, TokenSerializer, UserSerializers,
-    UserSingUpSerializer
-)
+from .permissions import (IsAdmin, IsAdminModeratorOwnerOrReadOnly,
+                          IsAdminOrReadOnly)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializers, ReviewSerializer,
+                          TitleReadSerializer, TitleSerializers,
+                          TokenSerializer, UserSerializers,
+                          UserSingUpSerializer)
 
 BASE_EMAIL = 'example@yandex.ru'
 MAIL_SUBJECT = 'Код подтверждения'
