@@ -70,7 +70,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        passpharse: ${{ secrets.PASSPHRASE }}
+        passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker pull socspec/infra_web
           sudo doker stop $(sudo docker ps -a -q)
