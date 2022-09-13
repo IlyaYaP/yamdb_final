@@ -74,9 +74,9 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passpharse: ${{ secrets.PASSPHARSE }}
         script: |
-        sudo docker pull socspec/infra_web
-        sudo doker stop $(sudo docker ps -a -q)
-        sudo docker run --rm -d -p 5000:5000 socspec/infra_web
+          sudo docker pull socspec/infra_web
+          sudo doker stop $(sudo docker ps -a -q)
+          sudo docker run --rm -d -p 5000:5000 socspec/infra_web
 
   send_message:
     runs-on: ubuntu-latest
