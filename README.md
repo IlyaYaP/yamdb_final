@@ -80,3 +80,4 @@ http://localhost/admin/
 ```
 docker-compose stop 
 ```
+# ![example workflow](https://github.com/IlyaYaP/infra_actions/actions/workflows/main.yml/badge.svg)
