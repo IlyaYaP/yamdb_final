@@ -82,3 +82,17 @@ http://localhost/admin/
 ```
 docker-compose stop 
 ```
+# Проверка workflow, деплой на сервер при команде git push:
+Устанавливаем Docker и Docker-compose на сервере:
+```
+sudo apt install docker.io
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
+Требуется указать IP вертуальной машины в строке server_name в файле `nginx/default.conf.`
+Копируем файлы  `nginx/default.conf и `docker-compose.yaml` на сервер:
+```
+scp docker-compose.yaml <username>@<host>/home/<username>/docker-compose.yaml
+sudo mkdir nginx
+scp default.conf <username>@<host>/home/<username>/nginx/default.conf
+```
