@@ -96,7 +96,7 @@ scp docker-compose.yaml <username>@<host>/home/<username>/docker-compose.yaml
 sudo mkdir nginx
 scp default.conf <username>@<host>/home/<username>/nginx/default.conf
 ```
-Сервер развернут на удаленной машине:
+Сервер развернут на виртуальной машине:
 ```
 https://console.cloud.yandex.ru
 ```
