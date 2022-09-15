@@ -90,7 +90,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 Требуется указать IP вертуальной машины в строке server_name в файле `nginx/default.conf.`
-Копируем файлы  `nginx/default.conf и `docker-compose.yaml` на сервер:
+Копируем файлы  `nginx/default.conf` и `docker-compose.yaml` на сервер:
 ```
 scp docker-compose.yaml <username>@<host>/home/<username>/docker-compose.yaml
 sudo mkdir nginx
